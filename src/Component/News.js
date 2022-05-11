@@ -2,8 +2,10 @@ import React from 'react'
 export default function News(props) {
   return (
     <> 
-        <div className="card" >
-        <img src={props.urlToImage} classname="card-img-top" alt="..." style={{height: 300}} />
+  <div className="col-md-4 col-sm-1 d-flex justify-content-stretch mt-4">
+    
+      <div className="card">
+        <img src={props.urlToImage} classname="card-img-top" alt="..." style={{height: 300}} /> 
         <div className="card-body">
         <span class="badge bg-success">{props.newsname}</span>
           <h5 classname="card-title" style={{textAlign: 'justify'}}>{props.title}</h5>
@@ -12,6 +14,8 @@ export default function News(props) {
             <a class="btn btn-primary btn-sm" href={props.url}>Read </a>
           </div>
         </div>
+        </div>
+        
         </div>
     </>
   )
