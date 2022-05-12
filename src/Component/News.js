@@ -2,8 +2,7 @@ import React from 'react'
 export default function News(props) {
   return (
     <> 
-  <div className="col-md-4 col-sm-1 d-flex justify-content-stretch mt-4">
-    
+  <div className="col-md-4 col-sm-1  mt-4 ">
       <div className="card">
         <img src={props.urlToImage} classname="card-img-top" alt="..." style={{height: 300}} /> 
         <div className="card-body">
